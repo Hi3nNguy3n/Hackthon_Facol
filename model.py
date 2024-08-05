@@ -25,8 +25,9 @@ def get_response(user_input):
     )
     return response.content
 
+
 if __name__ == "__main__":
-    # Đảm bảo sử dụng UTF-8 cho đầu ra
+
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
     if len(sys.argv) < 2:

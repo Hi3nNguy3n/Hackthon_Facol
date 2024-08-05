@@ -82,6 +82,7 @@ app.post('/getAdvice', (req, res) => {
                     res.json({ advice: response.trim() });
                 }
             }
+            
         });
     }).catch(error => {
         console.error(error);

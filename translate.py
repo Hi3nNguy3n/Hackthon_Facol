@@ -23,6 +23,7 @@ if __name__ == "__main__":
     if direction == 'vi_en':
         print(vi_en(user_input))
     elif direction == 'en_vi':
-        print(en_vi(user_input))
+        print(en_vi(user_input)
+              )
     else:
         print(user_input)
