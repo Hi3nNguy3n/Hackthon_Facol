@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Health Advisor Chatbot</h1>
+    </header>
+    <main>
+        <section class="language-selection">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('vi')">Tiếng Việt</button>
+            <input type="hidden" id="language" value="en">
+            <p>Current Language: <span id="current-language">English</span></p>
+        </section>
+        <form id="user-info-form">
+            <textarea name="condition" placeholder="Describe your medical condition"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <section class="processing" id="processing" style="display:none;">
+            <p>Processing your request...</p>
+            <div class="loader"></div>
+        </section>
+        <section class="advice" id="advice-section" style="display:none;">
+            <h2>Your Customized Advice</h2>
+            <p id="advice-text"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Health Advisor Chatbot. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
